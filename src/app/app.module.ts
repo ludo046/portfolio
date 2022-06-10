@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { PowerComponent } from './component/power/power.component';
 import { MapComponent } from './component/applications/map/map.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { CameraComponent } from './component/applications/camera/camera.component';
+import { WebcamModule } from 'ngx-webcam';
 
 
 @NgModule({
@@ -14,13 +16,15 @@ import { GoogleMapsModule } from '@angular/google-maps';
     AppComponent,
     PowerComponent,
     MapComponent,
+    CameraComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     GoogleMapsModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    WebcamModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

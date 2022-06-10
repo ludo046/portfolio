@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    .support{
+        pointer-events: none;
+    }
+    #support{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        pointer-events: none;
+        z-index: 2;
+    }
+    .picture{
+        width: 90%;
+        overflow:hidden;
+        margin: 0 auto;
+        position: relative;
+        top: -2%;
+        height: 100vh;
+        border-radius: 130px 130px 0 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .cam{
+            margin-left: -110px;
+        }
+        .button_border{
+            border: 2px solid white;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 30px auto 0;
+        }
+        .takePicture{
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
