@@ -1,0 +1,26 @@
+<div class="container" (window:resize)="onResize($event)">
+  <div class="top">
+    <p class="hours">{{hours | date:"HH:mm"}}</p>
+    <div class="top_icons">
+        <img class="icon" src="../../../assets/img/iphone/reseau.png" alt="">
+        <img class="icon" src="../../../assets/img/iphone/wifi.png" alt="">
+        <img class="icon" src="../../../assets/img/iphone/batterie.png" alt="">
+    </div>
+</div>
+<div class="support">
+  <img id="support" src="{{support}}" alt="support">  
+</div>
+    <div class="map" *ngIf="apiLoaded | async">
+      <google-map [options]="options" height="100vh">
+        <map-marker
+        *ngFor="let marker of markers"
+        [position]="marker.position"
+        [label]="marker.label"
+        [title]="marker.title"
+        [options]="marker.options"
+      >
+      </map-marker>
+      </google-map>
+    </div> 
+    <div class="return"></div>
+  </div>

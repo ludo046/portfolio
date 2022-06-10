@@ -1,0 +1,77 @@
+<div class="container" (window:resize)="onResize($event)">
+    <div class="top">
+        <p class="hours">{{hours | date:"HH:mm"}}</p>
+        <div class="top_icons">
+            <img class="icon" src="../../../assets/img/iphone/reseau.png" alt="">
+            <img class="icon" src="../../../assets/img/iphone/wifi.png" alt="">
+            <img class="icon" src="../../../assets/img/iphone/batterie.png" alt="">
+        </div>
+    </div>
+    <div class="applications">
+        <div class="appli">
+            <div class="calendar">   
+                <p class="day">{{hours | date:"EEE"}}.</p>
+                <p class="day_number">{{dateNumber}}</p>
+            </div>
+            <p class="appli_calendar">Calendar</p>
+        </div>
+        <div class="appli">
+            <img src="../../../assets/img/iphone/linkedin.png" alt="">
+            <p class="appli_name">LinkedIn</p>
+        </div>
+        <div class="appli">
+            <img src="../../../assets/img/iphone/astuces 2.png" alt="">
+            <p class="appli_name">Tricks</p>
+        </div>
+        <div class="appli"></div>
+        <div class="appli"></div>
+        <div class="appli"></div>
+        <div class="appli">
+            <img src="../../../assets/img/iphone/appareilPhoto.png" alt="">
+            <p class="appli_name">Camera</p>
+        </div>
+        <div class="appli">
+            <img src="../../../assets/img/iphone/notes.png" alt="">
+            <p class="appli_name">Notes</p>
+        </div>
+        <div class="appli">
+            <img src="../../../assets/img/iphone/reglage.png" alt="">
+            <p class="appli_name">Settings</p>
+        </div>
+        <div class="appli"></div>
+        <div class="appli"></div>
+        <div class="appli"></div>
+        <div class="appli">
+            <img src="../../../assets/img/iphone/photo.png" alt="">
+            <p class="appli_name">Pictures</p>
+        </div>
+        <div class="appli">
+            <img src="../../../assets/img/iphone/discord.png" alt="">
+            <p class="appli_name">Discord</p>
+        </div>
+        <div class="appli"></div>
+        <div class="appli"></div>
+        <div class="appli"></div>
+        <div class="appli"></div>
+        <div class="appli" [routerLink]="['map']" routerLinkActive="router-link-active" >
+            <img src="../../../assets/img/iphone/plan.png" alt="">
+            <p class="appli_name">Map</p>
+        </div>
+        <div class="appli">
+            <img class="border" src="../../../assets/img/iphone/gitthub.png" alt="">
+            <p class="appli_name">GitHub</p>
+        </div>
+        <div class="appli"></div>
+        <div class="appli"></div>
+        <div class="appli"></div>
+        <div class="appli"></div>
+    </div>
+        <img id="support" src="{{support}}" alt="support">   
+        <div class="footer_iphone">
+            <img src="../../../assets/img/iphone/iconeTelephone.png" alt="icone telephone">
+            <img src="../../../assets/img/iphone/iconeSafari.png" alt="icone safari">
+            <img src="../../../assets/img/iphone/iconeMessage.png" alt="icone message">
+            <img src="../../../assets/img/iphone/iconeMusique.png" alt="icone musique">
+        </div>
+</div>
+
